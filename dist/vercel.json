@@ -1,6 +1,6 @@
 {
   "cleanUrls": true,
   "redirects": [
-    { "source": "/dist/tr", "destination": "/tr.html", "permanent": true }
+    { "source": "/tr", "destination": "/tr.html", "permanent": true }
   ]
 }
