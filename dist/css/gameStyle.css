@@ -1,0 +1,5 @@
+body {
+    background-image: radial-gradient(rgb(156, 130, 103), hsl(36, 62%, 47%));
+    background-image: url("../img/onepiece-worldmap.jpg");
+    background-size: cover;
+}

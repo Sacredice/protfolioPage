@@ -1,0 +1,12 @@
+@mixin flexCards {
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+@mixin mq($size) {
+    @media only screen and (min-width: $size) {
+        @content;
+    }
+}

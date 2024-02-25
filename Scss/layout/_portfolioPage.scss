@@ -1,0 +1,275 @@
+.header {
+    margin-top: 2rem;
+    width: 97%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include mq(577px) {
+        width: 80%;
+    }
+
+    .headerContainer {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        .profile-picture {
+            width: 125px;
+            margin: 0 1rem;
+    
+            img {
+                width: 100%;
+                height: auto;
+                display: block;
+                border: 3px double $home-accent-color;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    .pageLanguage {
+        padding-right: 0.7rem;
+        padding-top: 0.3rem;
+        text-decoration: none;
+        color: $text-color;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    
+}
+
+.containerMain {
+    width: 93%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    @include mq(1201px) {
+        width: 85%;
+    }
+
+    .aboutMeContainer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        @include mq(577px) {
+            justify-content: flex-end;
+        }
+
+        .stepsStart{
+            width: 50px;
+            height: 100px;
+            opacity: 0.3;
+            margin-right: 20px;
+        }
+
+        .aboutMe {
+            margin-top: 0.75rem;
+            
+            width: 97%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+    
+            @include mq(577px) {
+                width: 75%;
+                margin-bottom: 1rem;
+                padding: 1rem 1.5rem;
+            }
+
+            @include mq(1201px) {
+                width: 88%;
+            }
+        }
+    }
+
+    
+
+
+    .programmingContent {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column-reverse;
+        @include mq(577px) {
+            width: 95%;
+            flex-direction: row;
+            margin-top: 1rem;
+        }
+
+        @include mq(1201px) {
+            width: 90%;
+
+        }
+
+        .skills {
+            margin-top: 10px;
+            margin-left: 25px;
+
+            width: 50%;
+            @include mq(577px) {
+                width: 42%;
+                margin-left: 0;
+                margin-right: auto;
+            }
+
+
+            li {
+                margin-bottom: 0.25rem;
+                list-style-type: none;
+                @include mq(1201px) {
+                    list-style-type: square;
+                }
+            }
+        }
+
+        .projects {
+            width: 95%;
+            margin-top: 10px;
+            margin-left: 10px;
+            @include mq(577px){
+                width: 68%;
+                margin-left: 16px;
+            }
+            @include mq(829px){
+                margin-left: 0;
+            }
+
+
+            .card {
+                display: flex;
+                flex-direction: column;
+                border: 1px solid $home-accent-color;
+                border-radius: 8px;
+                padding: 0.8em;
+                margin-bottom: 1em;
+                background-color: $bgcolor;
+                box-shadow: 0 2px 4px rgba(0, 0,0, 0.144);
+                
+                div {
+                    display: flex;
+
+                    a {
+                        color: $text-color;
+                        padding-left: 0;
+                        margin: 1px 1px;
+                        text-decoration: none;
+                    }
+
+                    a:hover {
+                        opacity: 0.7;
+                        text-decoration: underline;
+                    }
+
+                    .projectImage {
+                        display: none;
+                        margin-right: 8px;
+                        width: 260px;
+                        height: 157px;
+                        @include mq(829px) {
+                            display: block;
+                        }
+                    }
+
+                    .cardText {
+
+                        p {
+                            margin-top: 2px;
+                            @include mq(577px) {
+                                font-size: 20px;
+                            }
+                            @include mq(1400px) {
+                                font-size: 22px;
+                            }
+                        }
+
+                        padding-left: 5px;
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                        @include mq(829px) {
+                            width: calc(100% - 261px);
+                        }
+
+
+
+                        .projectHeaderWideScreen {
+                            display: none;
+                            @include mq(1200px) {
+                                display: block;
+                            }
+                        }
+                    }
+
+                }
+
+                .projectHeaderNarrowScreen {
+                    padding-left: 5px;
+                    display: block;
+                    text-align: start;
+                    @include mq(829px) {
+                        text-align: center;
+                        padding-bottom: 10px;
+                    }
+                    @include mq(1200px) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    background-color: $bgcolor;
+    width: 100%;
+    height: 40px;
+    margin-top: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: sticky;
+    bottom: 0;
+    border-top: 2px solid $home-accent-color;
+
+
+    .contactContainer {
+        display: flex;
+        margin-right: 12px;
+
+        .contactIcon {
+            margin: 3px;
+            padding: 2px;
+            width: 30px;
+            height: auto;
+        }
+    }
+
+  
+
+    
+    .contactHeader {
+        padding-left: 1.25rem;
+        padding-right: 0.4rem;
+
+    }
+}
+
+.backGroundFootsteps {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.09;
+    @include mq(1201px) {
+        display: block;
+    }
+}
+
+
+

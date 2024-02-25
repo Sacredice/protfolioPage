@@ -1,0 +1,36 @@
+.hidden {
+    display: none;
+}
+
+.mirrorImg {
+    transform: rotateY(180deg);
+}
+
+.displayBlock {
+    display: block;
+}
+
+.centeredText {
+    text-align: center;
+}
+
+.newGameBtn {
+    font-size: 0.8rem;
+    background-color: #212529;
+    color: whitesmoke;
+    min-width: 7rem;
+    min-height: 2.5rem;
+    text-wrap: nowrap;
+    border-radius: 10px;
+
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.backImg:hover {
+    filter: brightness(140%);
+}
+
+
