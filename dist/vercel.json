@@ -1,7 +1,0 @@
-{
-  "cleanUrls": true,
-  "outputDirectory": "public",
-  "redirects": [
-    { "source": "/dist/tr", "destination": "/tr.html", "permanent": false }
-  ]
-}
