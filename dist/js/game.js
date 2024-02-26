@@ -18,11 +18,11 @@ const dealCardsImagesAndEventListeners = () => {
         const elements = document.getElementsByClassName("gameboard__card");
     for (let i = 0; i < elements.length; i++) {
         const cardBack = document.createElement("img");
-        cardBack.src = "./public/cardBack.jpg";
+        cardBack.src = "./img/cardBack.jpg";
         elements[i].appendChild(cardBack);
         elements[i].firstElementChild.classList.add("backImg")
         const image = document.createElement("img");
-        image.src = `./public/${getRandomImage(list)[0]}.jpg`;
+        image.src = `./img/${getRandomImage(list)[0]}.jpg`;
         image.className = "hidden mirrorImg";
         elements[i].appendChild(image);
         elements[i]?.firstElementChild.addEventListener("click", (e) => turnCard(e), { once: true });  
