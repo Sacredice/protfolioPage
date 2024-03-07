@@ -9,6 +9,9 @@
     @include mq(577px) {
         width: 80%;
     }
+    @include mq(1201px) {
+        min-width: 1000px;
+    }
 
     .headerContainer {
         display: flex;
@@ -46,8 +49,13 @@
     height: auto;
     display: flex;
     align-items: center;
+    @include mq(829px) {
+        width: 85%;
+        min-width: 810px;
+    }
     @include mq(1201px) {
         width: 85%;
+        min-width: 1150px;
     }
 
     .aboutMeContainer {
@@ -219,6 +227,8 @@
                         display: none;
                     }
                 }
+
+            
             }
         }
     }
