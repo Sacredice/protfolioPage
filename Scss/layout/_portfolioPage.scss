@@ -169,7 +169,7 @@
                     }
 
                     figure a {
-                        display: contents;
+                        
                     }
 
 
@@ -180,6 +180,16 @@
                         height: 157px;
                         @include mq(829px) {
                             display: block;
+                        }
+
+                        a {
+                            display: contents;
+                            img {
+                                transition: transform 0s ease-in 0.2s;
+                            }
+                            img:hover {
+                                transform: scale(2.5);
+                            }
                         }
                     }
 
