@@ -168,10 +168,10 @@
                         text-decoration: none;
                     }
 
-                    a:hover {
-                        opacity: 0.7;
-                        text-decoration: underline;
+                    figure a {
+                        display: contents;
                     }
+
 
                     .projectImage {
                         display: none;
@@ -184,6 +184,10 @@
                     }
 
                     .cardText {
+                        
+                        :nth-child(2) {
+                            margin-bottom: 2px;
+                        }
 
                         p {
                             margin-top: 2px;
@@ -193,6 +197,25 @@
                             @include mq(1400px) {
                                 font-size: 22px;
                             }
+
+                            abbr {
+                                text-decoration: none;
+                                
+                            }
+
+                            abbr:hover{
+                                cursor: help;
+                                opacity: 0.8;
+                            }
+                        }
+
+                        a {
+                            color: royalblue;
+                        }
+
+                        a:hover {
+                            color: hsl(225, 73%, 65%);
+                            text-decoration: none;
                         }
 
                         padding-left: 5px;
